@@ -1,7 +1,6 @@
 package com.gcepapers.app.data.repository;
 
 import android.content.Context;
-import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
 

@@ -1,0 +1,17 @@
+# Android build artifacts
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+*.apk
+*.aar
+*.aab
+
+# Gradle wrapper jar
+gradle/wrapper/gradle-wrapper.jar

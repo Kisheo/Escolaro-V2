@@ -76,8 +76,8 @@ public class SearchActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String query = s.toString().trim();
                 if (query.isEmpty()) {
-                    adapter.submitList(null);
-                    binding.emptyState.setVisibility(View.GONE);
+                    adapter.submitResults(null, "");
+                    binding.recyclerResults.setVisibility(View.GONE);
                     binding.emptyStateText.setText(R.string.search_hint);
                     binding.emptyState.setVisibility(View.VISIBLE);
                 } else {
