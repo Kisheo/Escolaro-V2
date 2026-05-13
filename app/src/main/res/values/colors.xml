@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="md_theme_primary">#1565C0</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#D6E4FF</color>
+    <color name="md_theme_onPrimaryContainer">#001849</color>
+    <color name="md_theme_secondary">#565E71</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#DAE2F9</color>
+    <color name="md_theme_onSecondaryContainer">#131C2C</color>
+    <color name="md_theme_tertiary">#705575</color>
+    <color name="md_theme_onTertiary">#FFFFFF</color>
+    <color name="md_theme_tertiaryContainer">#FAD8FD</color>
+    <color name="md_theme_onTertiaryContainer">#28132D</color>
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_errorContainer">#FFDAD6</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_onErrorContainer">#410002</color>
+    <color name="md_theme_outline">#757780</color>
+    <color name="md_theme_background">#FEFBFF</color>
+    <color name="md_theme_onBackground">#1B1B1F</color>
+    <color name="md_theme_surface">#FEFBFF</color>
+    <color name="md_theme_onSurface">#1B1B1F</color>
+    <color name="md_theme_surfaceVariant">#E1E2EC</color>
+    <color name="md_theme_onSurfaceVariant">#44464F</color>
+    <color name="md_theme_inverseSurface">#303033</color>
+    <color name="md_theme_inverseOnSurface">#F2F0F4</color>
+    <color name="md_theme_inversePrimary">#ADC6FF</color>
+    <color name="md_theme_surfaceTint">#1565C0</color>
+    <color name="md_theme_outlineVariant">#C4C6D0</color>
+    <color name="md_theme_scrim">#000000</color>
+
+    <!-- Downloaded item highlight -->
+    <color name="downloaded_item_bg">#E8F5E9</color>
+    <color name="downloaded_text_color">#2E7D32</color>
+
+    <!-- Search highlight -->
+    <color name="highlight_color">#FFF9C4</color>
+
+    <!-- Common -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Page counter background -->
+    <color name="page_counter_bg">#CC000000</color>
+</resources>
