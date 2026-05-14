@@ -86,7 +86,7 @@ public class PdfViewerActivity extends AppCompatActivity
         setSupportActionBar(binding.toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setTitle(pdfTitle != null ? pdfTitle.trim() : "");
+            getSupportActionBar().setTitle(com.gcepapers.app.util.FileUtils.stripPdfExtensionForDisplay(pdfTitle));
         }
 
         viewModel = new ViewModelProvider(this).get(PdfViewModel.class);
@@ -294,7 +294,7 @@ public class PdfViewerActivity extends AppCompatActivity
         mainHandler.post(() -> {
             progressDialog = new ProgressDialog(this);
             progressDialog.setTitle(getString(R.string.downloading));
-            progressDialog.setMessage(pdfTitle);
+            progressDialog.setMessage(com.gcepapers.app.util.FileUtils.stripPdfExtensionForDisplay(pdfTitle));
             progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
             progressDialog.setMax(100);
             progressDialog.setCancelable(false);
@@ -358,7 +358,7 @@ public class PdfViewerActivity extends AppCompatActivity
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("application/pdf");
         shareIntent.putExtra(Intent.EXTRA_STREAM, fileUri);
-        shareIntent.putExtra(Intent.EXTRA_SUBJECT, pdfTitle);
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, com.gcepapers.app.util.FileUtils.stripPdfExtensionForDisplay(pdfTitle));
         shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         startActivity(Intent.createChooser(shareIntent, getString(R.string.share_pdf)));
     }
