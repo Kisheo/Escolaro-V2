@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.gcepapers.app'
-    compileSdk 34
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.gcepapers.app"
-        minSdk 21
-        targetSdk 34
+        minSdk 23
+        targetSdk 37
         versionCode 1
         versionName "1.0.0"
         multiDexEnabled true
@@ -112,7 +112,7 @@ dependencies {
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
 
     // AdMob
-    implementation 'com.google.android.gms:play-services-ads:23.0.0'
+    implementation 'com.google.android.gms:play-services-ads:25.2.0'
 
     // WorkManager (for cache cleanup)
     implementation 'androidx.work:work-runtime:2.9.0'
