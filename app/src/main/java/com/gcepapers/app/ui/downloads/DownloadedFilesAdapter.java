@@ -70,7 +70,7 @@ public class DownloadedFilesAdapter extends ListAdapter<DownloadedFile, Download
         }
 
         void bind(DownloadedFile file) {
-            binding.fileName.setText(file.getTitle() != null ? file.getTitle().trim() : "");
+            binding.fileName.setText(FileUtils.stripPdfExtensionForDisplay(file.getTitle()));
             binding.fileSize.setText(FileUtils.formatFileSize(file.getFileSize()));
 
             SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
