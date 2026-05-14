@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App-level stubs for attributes provided by Material / framework so resource linking succeeds -->
+    <attr name="colorSurfaceTint" format="color" />
+
+    <!-- Splash screen attributes (framework / library) -->
+    <attr name="windowSplashScreenBackground" format="reference|color" />
+    <attr name="windowSplashScreenAnimatedIcon" format="reference" />
+    <attr name="windowSplashScreenBrandingImage" format="reference" />
+</resources>
+

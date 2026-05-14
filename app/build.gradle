@@ -106,7 +106,7 @@ dependencies {
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
 
     // PDF Viewer
-    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.3'
 
     // Shimmer
     implementation 'com.facebook.shimmer:shimmer:0.5.0'

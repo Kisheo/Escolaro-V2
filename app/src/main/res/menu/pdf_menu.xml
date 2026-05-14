@@ -10,6 +10,7 @@
 
     <item
         android:id="@+id/action_share"
+        android:visible="false"
         android:title="@string/share_pdf"
         android:icon="@drawable/ic_share"
         app:showAsAction="never" />
@@ -17,6 +18,7 @@
     <item
         android:id="@+id/action_open_external"
         android:title="@string/open_external"
+        android:visible="false"
         android:icon="@drawable/ic_open_external"
         app:showAsAction="never" />
 

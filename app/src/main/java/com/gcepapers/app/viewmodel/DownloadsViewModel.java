@@ -27,6 +27,14 @@ public class DownloadsViewModel extends AndroidViewModel {
 
     public LiveData<List<DownloadedFile>> getAllDownloads() { return allDownloads; }
 
+    // Favorites LiveData (favorites are separate entity)
+    public LiveData<List<com.gcepapers.app.data.db.entity.FavoriteItem>> getFavorites() {
+        return downloadRepository.getAllFavorites();
+    }
+
+    // Offline files are the downloads; keep same LiveData accessor for clarity
+    public LiveData<List<DownloadedFile>> getOfflineFiles() { return allDownloads; }
+
     public LiveData<List<DownloadedFile>> searchDownloads(String query) {
         return downloadRepository.searchDownloads(query);
     }
@@ -37,5 +45,14 @@ public class DownloadsViewModel extends AndroidViewModel {
 
     public void deleteAllDownloads() {
         downloadRepository.deleteAllDownloads();
+    }
+
+    // Favorites operations
+    public void addFavorite(com.gcepapers.app.data.db.entity.FavoriteItem item) {
+        downloadRepository.addFavorite(item);
+    }
+
+    public void removeFavorite(String url) {
+        downloadRepository.removeFavorite(url);
     }
 }

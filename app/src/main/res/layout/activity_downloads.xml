@@ -45,6 +45,37 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <!-- Filter toggle: All / Favorites / Offline -->
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/filterToggleGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_all"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_favorites"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favorites" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/filter_offline"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offline" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
             <!-- Storage info -->
             <TextView
                 android:id="@+id/storageInfo"

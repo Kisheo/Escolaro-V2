@@ -92,7 +92,19 @@ public class PdfViewerActivity extends AppCompatActivity
         viewModel = new ViewModelProvider(this).get(PdfViewModel.class);
 
         // Check favorite status
-        isFavorite = viewModel.isFavorite(pdfUrl);
+        // Run DB access off the main thread to avoid Room's main-thread assertion
+        executor.execute(() -> {
+            boolean fav = false;
+            try {
+                fav = viewModel.isFavorite(pdfUrl);
+            } catch (Exception ignored) {}
+            boolean finalFav = fav;
+            mainHandler.post(() -> {
+                isFavorite = finalFav;
+                // Refresh options menu so favorite icon reflects the correct state
+                invalidateOptionsMenu();
+            });
+        });
 
         setupRetryButton();
         loadPdf();
