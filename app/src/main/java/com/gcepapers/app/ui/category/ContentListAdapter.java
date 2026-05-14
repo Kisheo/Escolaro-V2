@@ -84,7 +84,7 @@ public class ContentListAdapter extends ListAdapter<ContentItem, ContentListAdap
         }
 
         void bind(ContentItem item) {
-            binding.pdfTitle.setText(item.getTitle() != null ? item.getTitle().trim() : "");
+            binding.pdfTitle.setText(com.gcepapers.app.util.FileUtils.stripPdfExtensionForDisplay(item.getTitle()));
 
             boolean isDownloaded = downloadedUrls.contains(item.getUrl());
             if (isDownloaded) {
