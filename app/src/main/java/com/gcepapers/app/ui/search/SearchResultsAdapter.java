@@ -88,7 +88,7 @@ public class SearchResultsAdapter extends RecyclerView.Adapter<SearchResultsAdap
             }
 
             binding.resultIcon.setImageResource(iconRes);
-            binding.resultTitle.setText(highlightQuery(title, query));
+            binding.resultTitle.setText(highlightQuery(com.gcepapers.app.util.FileUtils.stripPdfExtensionForDisplay(title), query));
             binding.resultSubtitle.setText(subtitle);
 
             binding.getRoot().setOnClickListener(v -> {
