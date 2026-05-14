@@ -69,6 +69,11 @@
     <string name="cancel">Cancel</string>
     <string name="clear">Clear</string>
 
+    <!-- Filter labels -->
+    <string name="filter_all">All</string>
+    <string name="filter_favorites">Favorites</string>
+    <string name="filter_offline">Offline</string>
+
     <!-- Errors -->
     <string name="error_no_internet">No internet connection</string>
     <string name="error_download_failed">Download failed</string>
