@@ -122,8 +122,8 @@ public class SettingsActivity extends AppCompatActivity {
 
     private void setupPrivacyPolicy() {
         binding.privacyPolicyRow.setOnClickListener(v -> {
-            String url = getString(R.string.privacy_policy_url);
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+            // Open in-app WebView screen
+            startActivity(new Intent(this, PrivacyPolicyActivity.class));
         });
     }
 
