@@ -1,1 +1,1 @@
-# Escolaro-V2
+# GCE Papers – Android App

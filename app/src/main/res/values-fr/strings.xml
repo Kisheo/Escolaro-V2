@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GCE Papers</string>
+
+    <!-- Navigation -->
+    <string name="home">Accueil</string>
+    <string name="search">Rechercher</string>
+    <string name="favorites">Favoris</string>
+    <string name="recent">Récents</string>
+    <string name="settings">Paramètres</string>
+    <string name="downloads">Téléchargements</string>
+
+    <!-- Category / Content -->
+    <string name="subcategories">Sous-catégories</string>
+    <string name="papers">Épreuves</string>
+    <string name="available_offline">✓ Disponible Hors Ligne</string>
+    <string name="empty_categories">Aucune catégorie disponible</string>
+    <string name="empty_category">Cette catégorie est vide</string>
+    <string name="empty_state">Vide</string>
+
+    <!-- PDF Viewer -->
+    <string name="loading_pdf">Chargement du PDF…</string>
+    <string name="downloading">Téléchargement</string>
+    <string name="retry">Réessayer</string>
+    <string name="share_pdf">Partager le PDF</string>
+    <string name="open_external">Ouvrir avec…</string>
+    <string name="added_to_favorites">Ajouté aux favoris</string>
+    <string name="removed_from_favorites">Retiré des favoris</string>
+    <string name="page_counter">Page %1$d sur %2$d</string>
+
+    <!-- Search -->
+    <string name="search_hint">Rechercher des épreuves, catégories…</string>
+    <string name="no_results">Aucun résultat</string>
+
+    <!-- Settings -->
+    <string name="appearance">Apparence</string>
+    <string name="dark_mode">Mode Sombre</string>
+    <string name="language">Langue</string>
+    <string name="lang_english">Anglais</string>
+    <string name="lang_french">Français</string>
+    <string name="select_language">Choisir la langue</string>
+    <string name="restart_for_language">Redémarrez l\'application pour appliquer le changement de langue</string>
+    <string name="storage">Stockage</string>
+    <string name="clear_json_cache">Effacer le Cache JSON</string>
+    <string name="clear_cache">Effacer le Cache</string>
+    <string name="clear_cache_confirm">Cela forcera un nouveau téléchargement des données au prochain démarrage.</string>
+    <string name="clear_cache_summary">Actualiser les données du serveur</string>
+    <string name="cache_cleared">Cache effacé</string>
+    <string name="manage_downloads">Gestionnaire de Téléchargements</string>
+    <string name="about">À propos</string>
+    <string name="privacy_policy">Politique de Confidentialité</string>
+    <string name="rate_app">Évaluer l\'Application</string>
+    <string name="share_app">Partager l\'Application</string>
+    <string name="share_app_text">Découvrez GCE Papers pour les anciennes épreuves d\'examen! %1$s</string>
+    <string name="version">Version %1$s</string>
+
+    <!-- Downloads -->
+    <string name="no_downloads">Aucun téléchargement</string>
+    <string name="search_downloads">Rechercher des téléchargements…</string>
+    <string name="storage_used">Stockage utilisé : %1$s</string>
+    <string name="delete_all_downloads">Supprimer Tous les Téléchargements</string>
+    <string name="delete_all_confirm">Cela supprimera définitivement tous les PDF téléchargés.</string>
+    <string name="all_downloads_deleted">Tous les téléchargements supprimés</string>
+    <string name="delete_download">Supprimer le Téléchargement</string>
+    <string name="download_deleted">Téléchargement supprimé</string>
+    <string name="delete_all">Tout Supprimer</string>
+    <string name="open">Ouvrir</string>
+    <string name="delete">Supprimer</string>
+    <string name="cancel">Annuler</string>
+    <string name="clear">Effacer</string>
+
+    <!-- Errors -->
+    <string name="error_no_internet">Pas de connexion internet</string>
+    <string name="error_download_failed">Échec du téléchargement</string>
+    <string name="error_file_not_found">Fichier introuvable</string>
+    <string name="error_pdf_load_failed">Impossible de charger le PDF</string>
+    <string name="error_no_pdf_viewer">Aucune application de visualisation de PDF installée</string>
+</resources>
