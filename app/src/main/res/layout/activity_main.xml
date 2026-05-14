@@ -19,6 +19,40 @@
             app:title="@string/app_name"
             app:titleTextAppearance="@style/TextAppearance.GCEPapers.Toolbar" />
 
+        <!-- Filter toggle (All / Favorites / Offline) - full width buttons -->
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/mainFilterToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_filter_all"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_all" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_filter_favorites"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_favorites" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_filter_offline"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_offline" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -59,6 +93,14 @@
                 android:clipToPadding="false"
                 android:padding="8dp"
                 android:visibility="gone" />
+
+            <!-- Results List (used for Favorites / Offline views) -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/resultsRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:padding="8dp" />
 
             <!-- Empty State -->
             <LinearLayout
