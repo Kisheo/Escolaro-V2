@@ -184,7 +184,8 @@ public class DownloadsActivity extends AppCompatActivity {
     }
 
     private void confirmDelete(DownloadedFile file) {
-        String title = file.getTitle() != null ? file.getTitle() : file.getUrl();
+        String title = com.gcepapers.app.util.FileUtils.stripPdfExtensionForDisplay(
+            file.getTitle() != null ? file.getTitle() : file.getUrl());
         new MaterialAlertDialogBuilder(this)
             .setTitle(R.string.delete_download)
             .setMessage(title)
