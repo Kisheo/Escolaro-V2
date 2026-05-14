@@ -78,6 +78,13 @@
             android:parentActivityName=".ui.home.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
 
+        <!-- Privacy Policy (in-app WebView) -->
+        <activity
+            android:name=".ui.settings.PrivacyPolicyActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.settings.SettingsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
         <!-- Downloads Activity -->
         <activity
             android:name=".ui.downloads.DownloadsActivity"
