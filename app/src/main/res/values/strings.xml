@@ -11,8 +11,8 @@
     <string name="downloads">Downloads</string>
 
     <!-- Category / Content -->
-    <string name="subcategories">Subcategories</string>
-    <string name="papers">Papers</string>
+    <string name="subcategories">  </string>
+    <string name="papers">  </string>
     <string name="available_offline">✓ Available Offline</string>
     <string name="empty_categories">No categories available</string>
     <string name="empty_category">This category is empty</string>

@@ -10,8 +10,8 @@
     <string name="downloads">Téléchargements</string>
 
     <!-- Category / Content -->
-    <string name="subcategories">Sous-catégories</string>
-    <string name="papers">Épreuves</string>
+    <string name="subcategories"> </string>
+    <string name="papers">  </string>
     <string name="available_offline">✓ Disponible Hors Ligne</string>
     <string name="empty_categories">Aucune catégorie disponible</string>
     <string name="empty_category">Cette catégorie est vide</string>
