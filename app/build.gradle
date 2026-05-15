@@ -7,10 +7,9 @@ android {
     compileSdk 36
 
     defaultConfig {
-        applicationId "com.gcepapers.app"
-/*
+
         applicationId 'com.escolaro.gcepastpapers_olevel_alevel'
-*/
+
         minSdk 23
         targetSdk 37
         versionCode 5
