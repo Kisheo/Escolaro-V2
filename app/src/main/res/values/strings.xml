@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">GCE Papers</string>
+    <string name="app_name" translatable="false">GCE PastPapers</string>
 
     <!-- Navigation -->
     <string name="home">Home</string>
@@ -82,10 +82,10 @@
     <string name="error_no_pdf_viewer">No PDF viewer app installed</string>
 
     <!-- AdMob (translatable="false") -->
-    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="admob_interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="admob_app_open_id" translatable="false">ca-app-pub-3940256099942544/9257395921</string>
-    <string name="admob_rewarded_interstitial_id" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-4940478756914680~3077868177</string>
+    <string name="admob_interstitial_id" translatable="false">ca-app-pub-4940478756914680/1257029310</string>
+    <string name="admob_app_open_id" translatable="false">ca-app-pub-4940478756914680/4541668200</string>
+    <string name="admob_rewarded_interstitial_id" translatable="false">ca-app-pub-4940478756914680/4415565372</string>
 
     <!-- Privacy Policy URL -->
     <string name="privacy_policy_url" translatable="false">https://gcepapers.app/privacy</string>

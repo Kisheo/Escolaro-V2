@@ -8,10 +8,13 @@ android {
 
     defaultConfig {
         applicationId "com.gcepapers.app"
+/*
+        applicationId 'com.escolaro.gcepastpapers_olevel_alevel'
+*/
         minSdk 23
         targetSdk 37
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 5
+        versionName "5.4.2"
         multiDexEnabled true
 
         javaCompileOptions {
